@@ -63,7 +63,7 @@ def board_parse():
 if __name__ == '__main__':
     board_data = board_parse()
     df_board_data = pd.DataFrame(board_data)
-    df_board_data.to_csv('crawler/board_data.csv', mode='w', index=False, encoding='utf-8')
+    df_board_data.to_csv('board_data.csv', mode='w', index=False, encoding='utf-8')
 
     # for i in range(len(board_data['dates'])):
     #     print(board_data['dates'][i] + ' / ' + board_data['titles'][i] + ' / ' + board_data['address'][i])
