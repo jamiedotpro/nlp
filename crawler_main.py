@@ -94,7 +94,8 @@ if __name__ == '__main__':
     if 'Windows' == platform.system():
         driver = webdriver.Firefox(capabilities=None, executable_path='geckodriver-v0.26.0-win64/geckodriver.exe')
     else:
-        driver = webdriver.Firefox(capabilities=None, executable_path='/usr/local/bin/geckodriver')
+        # driver = webdriver.Firefox(capabilities=None, executable_path='/usr/local/bin/geckodriver')
+        driver = webdriver.Firefox(capabilities=None, executable_path='geckodriver-v0.25.0-macos/geckodriver')
 
     #!! 기간 내에 게시글이 하나도 없을 때 예외처리 추가 필요
     start_date = '2015-05-01'
