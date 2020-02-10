@@ -97,7 +97,7 @@ if __name__ == '__main__':
         # driver = webdriver.Firefox(capabilities=None, executable_path='/usr/local/bin/geckodriver')
         driver = webdriver.Firefox(capabilities=None, executable_path='geckodriver-v0.25.0-macos/geckodriver')
 
-    #!! 기간 내에 게시글이 하나도 없을 때 예외처리 추가 필요
+    #!! 기간 내에 게시글이 하나도 없는 상태로 마지막 페이지까지 갔을 때 예외처리 추가 필요
     start_date = '2015-05-01'
     end_date = '2015-05-31'
 
